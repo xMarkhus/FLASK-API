@@ -1,9 +1,9 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import dotenv
+from dotenv import load_dotenv
 import os 
 
-dotenv.load_dotenv(dotenv.find_dotenv())
+load_dotenv()
 # criar um API flask
 app = Flask(__name__)
 # criar uma instância de SQLAlchemy
